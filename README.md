@@ -1,5 +1,7 @@
 # Exploratory data analysis for emotion datasets (text)
 
+The goal of exploratory data analyses for emotion datasets is to get an understanding of the corpus, the linguistic style, lexical elements, syntax as well as the annotation scheme, distribution and imbalance check of classes (or analyses of scores).
+
 ## Contents
 - [Dataset 1](#dataset-1)
 
