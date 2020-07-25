@@ -23,17 +23,20 @@ The goal of exploratory data analyses for emotion datasets is to get an understa
 
 ## Contents
 - [Dataset I](#dataset-i)
+- [Dataset II](#dataset-ii)
+- [Dataset III](#dataset-iii)
+
 
 ## Dataset I
 
-[Jupyter notebook](https://github.com/suzana-ilic/EDA_nlp_emotion_datasets/blob/master/notebooks/)
+- **Dataset:** 2,894 Facebook posts annotated with scores for valence and arousal on an integer scale from 1-9 repsectively
+- [EDA](https://github.com/suzana-ilic/EDA_nlp_emotion_datasets/blob/master/notebooks/)
+- Model (BERT, RoBERTa)
 
-Dataset: 2,894 Facebook posts annotated with scores for valence and arousal
-
+**Task:** Regression\
+**Paper:** [Modelling valence and arousal in facebook posts (2016)](https://www.semanticscholar.org/paper/Modelling-Valence-and-Arousal-in-Facebook-posts-Preotiuc-Pietro-Schwartz/5b9f7b419766a35c9ee4a37d5338fa557bbbea47)\
+**References:**\
 Preoţiuc-Pietro, D., Schwartz, H. A., Park, G., Eichstaedt, J., Kern, M., Ungar, L., & Shulman, E. (2016): Modelling valence and arousal in facebook posts. In Proceedings of the 7th workshop on computational approaches to subjectivity, sentiment and social media analysis (pp. 9-15).
 
 Dimensonal Emotion model based on the circumplex model (valence and arousal) by James A. Russell (1980): A Circumplex Model of Affect. Journal of Personality and Social Psychology (39,6:1161–1178).
 
-<p align="center"><img src="https://github.com/suzana-ilic/EDA_nlp_emotion_datasets/blob/master/images/spacy_ner.png" width="500"></p>
-
-<p align="center"><img src="https://github.com/suzana-ilic/EDA_nlp_emotion_datasets/blob/master/images/lda.png" width="400"></p>
