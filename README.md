@@ -6,6 +6,14 @@ This thesis aims to contribute to research efforts in the field of affective com
 
 # Overview
 
+### Emotion Models
+
+- Categorical emotion models – emotions are represented as distinct, mutually exclusive categories (e.g. the basic emotions anger, fear, joy, ...)
+- Dimensional emotion models – emotions are represented in a two- or multidimensional space (e.g. valence and arousal)
+
+<p align="center"><img src="https://github.com/suzana-ilic/EDA_nlp_emotion_datasets/blob/master/images/em_models.png" width="600"></p>
+
+
 ### Datasets
 
 - Dataset I – Facebook posts
