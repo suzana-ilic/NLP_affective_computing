@@ -39,7 +39,7 @@ The goal of exploratory data analyses for emotion datasets is to get an understa
 
 - **Dataset:** 2,894 Facebook posts annotated with scores for valence and arousal on an integer scale from 1-9 repsectively
 - [EDA](https://github.com/suzana-ilic/EDA_nlp_emotion_datasets/blob/master/notebooks/)
-- Model (BERT, RoBERTa)
+- Model (BERT, RoBERTa) using [Simple Transformers](https://simpletransformers.ai/)
 
 **Task:** Regression\
 **Paper:** [Modelling valence and arousal in facebook posts (2016)](https://www.semanticscholar.org/paper/Modelling-Valence-and-Arousal-in-Facebook-posts-Preotiuc-Pietro-Schwartz/5b9f7b419766a35c9ee4a37d5338fa557bbbea47)\
