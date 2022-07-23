@@ -14,6 +14,22 @@ This thesis aims to contribute to research efforts in the field of affective com
 <p align="center"><img src="https://github.com/suzana-ilic/EDA_nlp_emotion_datasets/blob/master/images/em_models.png" width="600"></p>
 
 
+### Model demo: Predicting basic emotions
+
+In this demo you can try out directly in the browser [a fine-tuned checkpoint of DistilRoBERTa-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) by Jochen Hartmann. The model was trained on 6 diverse datasets (see Appendix below) and predicts Ekman's 6 basic emotions, plus a neutral class:
+
+- anger 🤬
+- disgust 🤢
+- fear 😨
+- joy 😀
+- neutral 😐
+- sadness 😭
+- surprise 😲
+
+[Demo](https://huggingface.co/spaces/Suzana/text_basic_emotions) by Suzana Ilic
+
+Model referece: Jochen Hartmann, "Emotion English DistilRoBERTa-base". https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/, 2022.
+
 ### Datasets
 
 - Dataset I – Facebook posts
