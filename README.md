@@ -28,7 +28,7 @@ In this demo you can try out directly in the browser [a fine-tuned checkpoint of
 
 [Demo](https://huggingface.co/spaces/Suzana/text_basic_emotions) by Suzana Ilic
 
-Model referece: Jochen Hartmann, "Emotion English DistilRoBERTa-base". https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/, 2022.
+Model reference: Jochen Hartmann, "Emotion English DistilRoBERTa-base". https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/, 2022.
 
 ### Datasets
 
