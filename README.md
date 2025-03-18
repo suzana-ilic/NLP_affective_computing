@@ -59,6 +59,27 @@ Preoţiuc-Pietro, D., Schwartz, H. A., Park, G., Eichstaedt, J., Kern, M., Ungar
 
 Dimensonal Emotion model based on the circumplex model (valence and arousal) by James A. Russell (1980): A Circumplex Model of Affect. Journal of Personality and Social Psychology (39,6:1161–1178).
 
+**Dataset Access**: The original authors have taken the dataset offline, it's currently not available.
+
 ## Dataset II
+
+For the experimental setup comparing different predictive models, we use a research
+dataset for text-based emotion recognition called GoEmotions, a corpus of 58k care-
+fully curated comments extracted from Reddit, with human annotations to 27 emo-
+tion categories or Neutral (Demszky et al. 2020).
+
+- Number of examples: 58,009.
+- Number of emotion labels: 27 + Neutral.
+- Maximum sequence length in training and evaluation datasets: 30.
+
+In addition to the raw data, the authors also include a version filtered based on
+rater-agreement, which contains the following split:
+
+- Size of training dataset: 43,410.
+- Size of test dataset: 5,427.
+- Size of validation dataset: 5,426.
+
+**Dataset Access**
+- [GoEmotions](https://github.com/google-research/google-research/tree/master/goemotions/data)
 
 
