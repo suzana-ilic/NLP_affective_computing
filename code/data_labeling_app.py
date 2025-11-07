@@ -14,6 +14,12 @@ from datetime import datetime
 class DataLabelingApp:
     """GUI application for labeling text data with emotion categories."""
     
+    # CSV export field names
+    CSV_FIELDNAMES = ["text", "label"]
+    
+    # Maximum text length to display in table
+    MAX_TEXT_DISPLAY_LENGTH = 100
+    
     def __init__(self, root):
         """Initialize the data labeling application.
         
@@ -26,6 +32,7 @@ class DataLabelingApp:
         
         # Data storage
         self.labeled_data = []
+        self.next_id = 1  # Counter for unique IDs
         
         # Emotion labels based on Ekman's basic emotions + neutral (as mentioned in README)
         self.emotion_labels = [
@@ -147,8 +154,9 @@ class DataLabelingApp:
             messagebox.showwarning("Warning", "Please select a label.")
             return
         
-        # Create entry
-        entry_id = len(self.labeled_data) + 1
+        # Create entry with unique ID
+        entry_id = self.next_id
+        self.next_id += 1
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
         entry = {
@@ -160,9 +168,11 @@ class DataLabelingApp:
         
         self.labeled_data.append(entry)
         
+        # Format text for display
+        display_text = self._truncate_text(text, self.MAX_TEXT_DISPLAY_LENGTH)
+        
         # Add to treeview
-        self.tree.insert("", tk.END, values=(entry_id, text[:100] + "..." if len(text) > 100 else text, 
-                                             label, timestamp))
+        self.tree.insert("", tk.END, values=(entry_id, display_text, label, timestamp))
         
         # Clear input
         self.text_input.delete("1.0", tk.END)
@@ -171,6 +181,20 @@ class DataLabelingApp:
         self.update_stats()
         
         messagebox.showinfo("Success", "Label added successfully!")
+    
+    def _truncate_text(self, text, max_length):
+        """Truncate text to specified length and add ellipsis if needed.
+        
+        Args:
+            text: The text to truncate
+            max_length: Maximum length before truncation
+            
+        Returns:
+            Truncated text with ellipsis if needed
+        """
+        if len(text) > max_length:
+            return text[:max_length] + "..."
+        return text
         
     def delete_selected(self):
         """Delete the selected entry from the dataset."""
@@ -229,8 +253,7 @@ class DataLabelingApp:
         
         try:
             with open(file_path, 'w', newline='', encoding='utf-8') as csvfile:
-                fieldnames = ["text", "label"]
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                writer = csv.DictWriter(csvfile, fieldnames=self.CSV_FIELDNAMES)
                 
                 writer.writeheader()
                 for entry in self.labeled_data:
