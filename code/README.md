@@ -38,11 +38,17 @@ sudo apt-get install python3-tk
 
 ### Running the Application
 
+Method 1 - Direct:
 ```bash
 python3 code/data_labeling_app.py
 ```
 
-Or directly:
+Method 2 - Using the run script:
+```bash
+python3 code/run_app.py
+```
+
+Method 3 - From the code directory:
 ```bash
 cd code
 python3 data_labeling_app.py
