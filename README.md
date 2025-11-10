@@ -84,6 +84,10 @@ rater-agreement, which contains the following split:
 
 ## Data Labeling Tool
 
-- [Code and labeling tool]()
+- [Code and labeling tool](https://github.com/suzana-ilic/NLP_affective_computing/tree/master/code)
+  
+<img width="1280" height="812" alt="data_labeling_tool_ac" src="https://github.com/user-attachments/assets/8254df1c-a822-4d95-8fe7-de3533b5c57f" />
+
+  
 
 
